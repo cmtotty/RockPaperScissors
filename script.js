@@ -16,7 +16,7 @@ function getPlayerChoice(){
     if (choice == "ROCK" || choice == "SCISSORS" || choice == "PAPER"){
         running = false;
         return choice;
-    }
+        }
     }
 }
 
@@ -68,4 +68,33 @@ function playRound(){
     }
 }
 
-playRound();
+function game(){
+    let cpuWins = 0;
+    let playerWins = 0;
+    console.log("Let's play Rock, Paper, Scissors");
+    for (let i=0; i<5; i++){
+        console.log(`The score is:\n Me: ${cpuWins}\n You:${playerWins}`);
+        let playing=true;
+        while(playing==true){
+            let result = playRound();
+            if (result == "cpu"){
+                playing=false;
+                cpuWins += 1
+            }
+            else if (result == "player"){
+                playing=false;
+                playerWins += 1;
+            }
+        }
+
+    }
+    console.log(`The final score is ${cpuWins} to ${playerWins}`)
+    if(cpuWins > playerWins){
+        console.log("I WIN!")
+    }
+    else{
+        console.log("You win this time")
+    }
+}
+
+game();
