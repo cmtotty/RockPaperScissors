@@ -20,6 +20,7 @@ function getPlayerChoice(){
     }
 }
 
+// A function that plays a single round of rock paper scissors
 function playRound(){
     let cpuChoice = getComputerChoice();
     let playerChoice = getPlayerChoice();
@@ -68,6 +69,7 @@ function playRound(){
     }
 }
 
+// A function that plays a full game (best of 5) of rock paper scissors
 function game(){
     let cpuWins = 0;
     let playerWins = 0;
