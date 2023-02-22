@@ -1,0 +1,42 @@
+
+
+body {
+    background-color: black;
+    margin:0;
+}
+
+.header{
+    background-color: grey;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding:30px;
+    margin-bottom: 10px;
+}
+
+.instructions{
+    color:grey;
+    font-size: 24px;
+    text-align: center;
+}
+
+.score{
+    color:grey;
+    display:flex;
+    font-weight: bold;
+    font-size: 36px;
+    padding:10px;
+    justify-content: space-around;
+}
+
+.choices{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-size: 30px;
+    margin: 15px;
+    
+}
